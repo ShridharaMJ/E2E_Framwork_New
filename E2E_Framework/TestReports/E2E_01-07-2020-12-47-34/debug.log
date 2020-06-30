@@ -1,0 +1,12 @@
+2020-07-01 00:47:34,321 +0530 [main] INFO  (TestLogs.java:11) - This is testing
+2020-07-01 00:47:34,325 +0530 [main] DEBUG (TestLogs.java:12) - Clicking on elemenent
+2020-07-01 00:47:34,326 +0530 [main] ERROR (TestLogs.java:13) - This error message
+2020-07-01 00:47:34,338 +0530 [main] INFO  (TestLogs.java:11) - This is testing
+2020-07-01 00:47:34,339 +0530 [main] DEBUG (TestLogs.java:12) - Clicking on elemenent
+2020-07-01 00:47:34,339 +0530 [main] ERROR (TestLogs.java:13) - This error message
+2020-07-01 00:47:34,346 +0530 [main] INFO  (TestLogs.java:11) - This is testing
+2020-07-01 00:47:34,347 +0530 [main] DEBUG (TestLogs.java:12) - Clicking on elemenent
+2020-07-01 00:47:34,348 +0530 [main] ERROR (TestLogs.java:13) - This error message
+2020-07-01 00:47:34,356 +0530 [main] INFO  (TestLogs.java:11) - This is testing
+2020-07-01 00:47:34,356 +0530 [main] DEBUG (TestLogs.java:12) - Clicking on elemenent
+2020-07-01 00:47:34,357 +0530 [main] ERROR (TestLogs.java:13) - This error message
