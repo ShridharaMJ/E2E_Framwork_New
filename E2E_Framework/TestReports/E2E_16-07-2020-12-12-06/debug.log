@@ -1,0 +1,7 @@
+2020-07-16 00:12:23,527 +0530 [main] INFO  (TestBase.java:64) - Entering URL: http://localhost/orangehrm/symfony/web/index.php/auth/login
+2020-07-16 00:12:25,444 +0530 [main] INFO  (LogingPage.java:33) - Entering usernameshridhara.jayaram
+2020-07-16 00:12:25,445 +0530 [main] ERROR (LogingPage.java:38) - Not able to enter usenrman shridhara.jayaram
+2020-07-16 00:12:25,447 +0530 [main] INFO  (LogingPage.java:51) - Entering passwordQaTest@1234*
+2020-07-16 00:12:25,447 +0530 [main] ERROR (LogingPage.java:55) - Not able to enter password QaTest@1234*
+2020-07-16 00:12:25,450 +0530 [main] INFO  (LogingPage.java:68) - Clicking on Login
+2020-07-16 00:12:25,450 +0530 [main] ERROR (LogingPage.java:72) - Not able to click on login

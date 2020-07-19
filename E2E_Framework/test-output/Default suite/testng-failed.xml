@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.e2e.testnglistener.Demo">
+      <class name="com.qahrm.logintestcases.TC1_login">
         <methods>
-          <include name="demoTest"/>
+          <include name="loginToApps"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.e2e.testnglistener.Demo -->
+      </class> <!-- com.qahrm.logintestcases.TC1_login -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

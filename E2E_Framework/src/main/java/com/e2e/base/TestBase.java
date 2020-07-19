@@ -4,16 +4,22 @@ import java.io.File;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 
 import com.e2e.javahelper.PropertieHelper;
+import com.e3e.log4g.LoggerHelper;
 
 public class TestBase {
+
+	private static final Logger log = LoggerHelper.getLogger(TestBase.class);
 
 	public PropertieHelper pref;
 	public WebDriver driver;
@@ -55,6 +61,7 @@ public class TestBase {
 	 */
 	public void goToUrl() {
 		String urlvalue = pref.getProperties("url");
+		log.info("Entering URL: " + urlvalue);
 		driver.get(urlvalue);
 
 	}
@@ -66,6 +73,7 @@ public class TestBase {
 	 * @author Shridhara
 	 */
 	public void goToUrl(String url) {
+		log.info("Entering URL: " + url);
 		driver.get(url);
 	}
 
@@ -77,7 +85,7 @@ public class TestBase {
 	public static void takeScreenShot(WebDriver driver, String filename) {
 		TakesScreenshot shot = (TakesScreenshot) driver;
 		File screenshotAs = shot.getScreenshotAs(OutputType.FILE);
-		File destfolder = new File(System.getProperty("user.dir") + "\\TestReport\\Screenshots\\" + filename + ".png");
+		File destfolder = new File(System.getProperty("user.dir") + "\\TestReports\\Screenshots\\" + filename + ".png");
 		try {
 			FileUtils.copyFile(screenshotAs, destfolder);
 		} catch (Exception e) {
@@ -85,4 +93,11 @@ public class TestBase {
 		}
 
 	}
+@AfterMethod
+public void tearDown() {
+	
+	log.info("Closing browse");
+	driver.quit();
+	
+}
 }

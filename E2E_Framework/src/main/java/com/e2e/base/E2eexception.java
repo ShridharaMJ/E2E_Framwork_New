@@ -4,7 +4,7 @@ package com.e2e.base;
  * @author Shridhara
  *
  */
-public class E2eexception extends Exception {
+public class E2eexception extends Throwable {
 
 	/**
 	 * @param message

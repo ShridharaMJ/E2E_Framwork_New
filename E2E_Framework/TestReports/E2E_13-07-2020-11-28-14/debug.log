@@ -1,0 +1,5 @@
+2020-07-13 23:28:21,250 +0530 [main] INFO  (AutomationUtile.java:23) - Initial set up is started
+2020-07-13 23:28:21,255 +0530 [main] INFO  (TestBase.java:64) - Entering URL: https://www.javatpoint.com/
+2020-07-13 23:28:34,069 +0530 [main] INFO  (AutomationUtile.java:31) - Closing browse
+2020-07-13 23:28:38,202 +0530 [main] INFO  (AutomationUtile.java:23) - Initial set up is started
+2020-07-13 23:28:38,203 +0530 [main] INFO  (TestBase.java:64) - Entering URL: https://www.javatpoint.com/

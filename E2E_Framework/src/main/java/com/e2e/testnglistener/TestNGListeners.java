@@ -1,5 +1,6 @@
 package com.e2e.testnglistener;
 
+
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -13,12 +14,9 @@ public class TestNGListeners implements ITestListener {
 		// TODO Auto-generated method stub
 		WebDriver driver = null;
 		String methodName = result.getMethod().getMethodName();
-
 		try {
-			driver = (WebDriver) result.getTestClass().getRealClass().getDeclaredField("driver")
-					.get(result.getInstance());
+			driver=(WebDriver)result.getTestClass().getRealClass().getDeclaredField("driver").get(result.getInstance());
 		} catch (Exception e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 

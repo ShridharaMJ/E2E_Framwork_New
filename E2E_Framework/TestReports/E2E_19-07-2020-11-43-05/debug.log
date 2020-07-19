@@ -1,0 +1,2 @@
+2020-07-19 23:43:22,832 +0530 [main] INFO  (TestBase.java:64) - Entering URL: http://localhost/orangehrm/symfony/web/index.php/auth/login
+2020-07-19 23:43:29,180 +0530 [main] INFO  (TestBase.java:99) - Closing browse
