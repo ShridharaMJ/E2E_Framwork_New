@@ -1,17 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-07-19T23:49:45 IST" name="Default suite" finished-at="2020-07-19T23:49:58 IST" duration-ms="12906">
+  <suite started-at="2020-07-20T00:51:24 IST" name="Default suite" finished-at="2020-07-20T00:51:48 IST" duration-ms="23464">
     <groups>
     </groups>
-    <test started-at="2020-07-19T23:49:45 IST" name="Default test" finished-at="2020-07-19T23:49:58 IST" duration-ms="12906">
+    <test started-at="2020-07-20T00:51:24 IST" name="Default test" finished-at="2020-07-20T00:51:48 IST" duration-ms="23464">
       <class name="com.qahrm.logintestcases.TC1_login">
-        <test-method signature="loginToApps()[pri:0, instance:com.qahrm.logintestcases.TC1_login@60bd273d]" started-at="2020-07-19T23:49:45 IST" name="loginToApps" finished-at="2020-07-19T23:49:58 IST" duration-ms="12775" status="PASS">
+        <test-method signature="loginToApps()[pri:0, instance:com.qahrm.logintestcases.TC1_login@60bd273d]" started-at="2020-07-20T00:51:24 IST" name="loginToApps" finished-at="2020-07-20T00:51:36 IST" duration-ms="11224" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginToApps -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qahrm.logintestcases.TC1_login@60bd273d]" started-at="2020-07-19T23:49:58 IST" name="tearDown" finished-at="2020-07-19T23:49:58 IST" duration-ms="5" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qahrm.logintestcases.TC1_login@60bd273d]" started-at="2020-07-20T00:51:36 IST" name="tearDown" finished-at="2020-07-20T00:51:38 IST" duration-ms="2131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="loginWithInvalidCredentials()[pri:0, instance:com.qahrm.logintestcases.TC1_login@60bd273d]" started-at="2020-07-20T00:51:38 IST" name="loginWithInvalidCredentials" finished-at="2020-07-20T00:51:45 IST" duration-ms="7437" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginWithInvalidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qahrm.logintestcases.TC1_login@60bd273d]" started-at="2020-07-20T00:51:45 IST" name="tearDown" finished-at="2020-07-20T00:51:48 IST" duration-ms="2582" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

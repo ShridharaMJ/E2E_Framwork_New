@@ -7,6 +7,7 @@
         <methods>
           <include name="loginToApps"/>
           <include name="tearDown"/>
+          <include name="loginWithInvalidCredentials"/>
         </methods>
       </class> <!-- com.qahrm.logintestcases.TC1_login -->
     </classes>

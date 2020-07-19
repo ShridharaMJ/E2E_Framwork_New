@@ -1,0 +1,7 @@
+2020-07-20 00:20:11,648 +0530 [main] INFO  (TestBase.java:64) - Entering URL: http://localhost/orangehrm/symfony/web/index.php/auth/login
+2020-07-20 00:20:12,648 +0530 [main] INFO  (LogingPage.java:29) - Entering usernameshridhara.jayaram
+2020-07-20 00:20:12,830 +0530 [main] INFO  (LogingPage.java:47) - Entering passwordQaTest@1234*
+2020-07-20 00:20:12,898 +0530 [main] INFO  (LogingPage.java:64) - Clicking on Login
+2020-07-20 00:20:15,149 +0530 [main] INFO  (DashboardPage.java:26) - Clicking on Welcome dropdown
+2020-07-20 00:20:15,519 +0530 [main] INFO  (DashboardPage.java:28) - clicking on Logout
+2020-07-20 00:20:18,612 +0530 [main] INFO  (TestBase.java:99) - Closing browse
