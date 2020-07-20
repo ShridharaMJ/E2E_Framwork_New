@@ -23,8 +23,11 @@ public class LogingPage {
 	private WebElement loginbutton;
 	@FindBy(id = "menu_dashboard_index")
 	private WebElement dashboard;
-@FindBy(xpath="//*[text()='Invalid credentials']")
-private WebElement invalidmsgele;
+	@FindBy(xpath = "//*[text()='Invalid credentials']")
+	private WebElement invalidmsgele;
+	@FindBy(xpath = "//span[@id='spanMessage']")
+	private WebElement merror;
+
 	/**
 	 * This method used to enter username in username field
 	 * 
@@ -80,7 +83,6 @@ private WebElement invalidmsgele;
 		return dashboard.isDisplayed();
 	}
 
-	
 	/**
 	 * @return
 	 * @author Shridhara
@@ -88,7 +90,18 @@ private WebElement invalidmsgele;
 	public boolean VerifyInvalidMessage() {
 		log.info("Verifing invalid message");
 		return invalidmsgele.isDisplayed();
-		
+
 	}
-	
+
+	/**
+	 * @return String
+	 * @author Shridhara
+	 */
+	public String getMandatoryErrorMessage() {
+
+		String text = merror.getText();
+		log.info("Error message is : " + text);
+		return text;
+
+	}
 }
