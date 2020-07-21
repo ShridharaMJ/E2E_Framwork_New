@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
+import com.e2e.base.E2eexception;
 import com.e3e.log4g.LoggerHelper;
 
 /**
@@ -16,17 +17,17 @@ public class LogingPage {
 	private static final Logger log = LoggerHelper.getLogger(LogingPage.class);
 	WebDriver driver;
 	@FindBy(id = "txtUsername")
-	private WebElement uname;
+	public WebElement uname;
 	@FindBy(id = "txtPassword")
-	private WebElement pwrod;
+	public WebElement pwrod;
 	@FindBy(id = "btnLogin")
-	private WebElement loginbutton;
+	public WebElement loginbutton;
 	@FindBy(id = "menu_dashboard_index")
-	private WebElement dashboard;
+	public WebElement dashboard;
 	@FindBy(xpath = "//*[text()='Invalid credentials']")
-	private WebElement invalidmsgele;
+	public WebElement invalidmsgele;
 	@FindBy(xpath = "//span[@id='spanMessage']")
-	private WebElement merror;
+	public WebElement merror;
 
 	/**
 	 * This method used to enter username in username field
@@ -104,4 +105,22 @@ public class LogingPage {
 		return text;
 
 	}
+
+	public void loginToApp(String username,String password) throws E2eexception {
+		
+		try {
+			log.info("Entering username "+username);
+			uname.sendKeys(username);
+			log.info("Entering Password "+password);
+			pwrod.sendKeys(password);
+			log.info("Clicking on log-in");;
+			clickLogin();
+		}
+		catch (Exception e) {
+			log.error("Not able to loginto applaication");
+			throw new E2eexception("Not able to login to application "+e);
+		}
+		
+	}
+
 }

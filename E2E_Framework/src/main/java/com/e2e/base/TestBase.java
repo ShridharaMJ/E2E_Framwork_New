@@ -1,6 +1,7 @@
 package com.e2e.base;
 
 import java.io.File;
+import java.time.LocalDateTime;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
@@ -83,9 +84,10 @@ public class TestBase {
 	 * @author Shridhara
 	 */
 	public static void takeScreenShot(WebDriver driver, String filename) {
+		String date = LocalDateTime.now().toString();
 		TakesScreenshot shot = (TakesScreenshot) driver;
 		File screenshotAs = shot.getScreenshotAs(OutputType.FILE);
-		File destfolder = new File(System.getProperty("user.dir") + "\\TestReports\\Screenshots\\" + filename + ".png");
+		File destfolder = new File(System.getProperty("user.dir") + "\\TestReports\\Screenshots\\" + filename + date +".png");
 		try {
 			FileUtils.copyFile(screenshotAs, destfolder);
 		} catch (Exception e) {
